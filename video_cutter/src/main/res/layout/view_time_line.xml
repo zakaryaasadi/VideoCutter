@@ -47,19 +47,19 @@
             android:secondaryProgress="0"
             android:thumb="@drawable/apptheme_text_select_handle_middle"/>
 
-        <com.video_trim.view.ProgressBarView
+        <com.zak.video_cutter.view.ProgressBarView
             android:id="@+id/timeVideoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/handlerTop"/>
 
-        <com.video_trim.view.TimeLineView
+        <com.zak.video_cutter.view.TimeLineView
             android:id="@+id/timeLineView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/timeVideoView"/>
 
-        <com.video_trim.view.RangeSeekBarView
+        <com.zak.video_cutter.view.RangeSeekBarView
             android:id="@+id/timeLineBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
