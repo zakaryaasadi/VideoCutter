@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.zak.video_cutter.utils.FileUtils;
+import com.zak.video_cutter.videocompressor.VideoCompress;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         requestPermission();
         Button galleryButton = findViewById(R.id.galleryButton);
         if (galleryButton != null) {
@@ -49,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        Button recordButton = findViewById(R.id.cameraButton);
+        final Button recordButton = findViewById(R.id.cameraButton);
         if (recordButton != null) {
             recordButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -58,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+        
     }
 
     private void openVideoCapture() {
